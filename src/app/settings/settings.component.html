@@ -1,0 +1,20 @@
+<div id="img">
+  <div class="container">
+    <div *ngIf='!weatherservice.flag'>
+      <h3>They're are no favorites cities!</h3>
+      <h5>Press the heart button to add a city!</h5>
+    </div>
+    <ul class="flex">
+      <li *ngFor='let fav of weatherservice.favorites;let i=index'>
+        <a id="notFav" (click)='weatherservice.notFavorite()'><img id='delete'
+            src="../../assets/Pics/deletefromfav.png"></a>
+        <button routerLink='/home'>
+          <h6>{{fav.id}}</h6><br>
+          <h3> {{fav.name}}</h3><br>
+          <h5>{{fav.description}}</h5><br>
+          <h2>{{fav.weather}}<span id="C">&#x2103;</span><img class="dayTemp" src='../../assets/Pics/dayTemp.png'></h2>
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>

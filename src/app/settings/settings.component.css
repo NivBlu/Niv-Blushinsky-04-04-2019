@@ -1,0 +1,99 @@
+
+
+#img {
+    min-width: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    background-image: url('../../assets/Pics/colourfullsky.png');
+    background-size: cover;
+    padding: 25px;
+  }
+
+  #img2 {
+    min-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/Pics/clearnightsky.jpg');
+    background-size: cover;
+  }
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+   
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+h3,h5{
+text-align: center;
+}
+
+h2,h5,h3,h6{
+    margin: 0;
+}
+
+.flex{
+    display: flex;
+}
+
+li{
+    list-style: none;
+}
+
+#notFav{
+  cursor: pointer;
+}
+
+#delete{
+    width: 20px;
+    height: 20px;
+}
+button{
+    color: aliceblue;
+    display: flex;
+    background: rgba(0, 0, 0, 0.384);
+    border-radius: 25px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+    border: 1px solid gray;
+    margin: 5px;
+    padding: 25px;
+    min-width: 200px;
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.12), 0 1px 2px rgba(255, 255, 255, 0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+  
+button:hover {
+    box-shadow: 0 14px 28px rgba(255, 255, 255, 0.25), 0 10px 10px rgba(255, 255, 255, 0.22);
+  }
+
+
+  .dayTemp{
+    width: 30px;
+    height: 30px;
+    justify-self: center;
+}
+
+  #C{
+    font-size: 50%;
+    font-weight: lighter;
+}

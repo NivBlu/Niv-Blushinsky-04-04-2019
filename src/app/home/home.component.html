@@ -1,0 +1,20 @@
+<div id="img" >
+    <div class="container">
+        <div class="searchArea">
+            <div class="search">
+                <input placeholder="Enter City Name" [(ngModel)]='city' type="search"><button class="fa fa-search"
+                    (click)='getWeather()'></button>
+            </div>
+           
+        </div>
+
+        <div class="info">
+            <h2 class="text-align-center">{{city}},{{country}}</h2>
+            <h4 class="text-align-center">{{description}}</h4>
+            <h1 class="text-align-center">{{maxTemp}} <span id="C">&#x2103;</span></h1>
+             <button class='button' (click)='setFavorite()' title="Add To Favorites Cities!"><img id='fav' src='../../assets/Pics/iconfinder_heart_1055045.png'></button>
+        </div>
+    </div>
+
+</div>
+<app-weekly></app-weekly>
